@@ -1,0 +1,53 @@
+<PISI>
+    <Source>
+        <Name>hyfetch-py3</Name>
+        <Homepage>https://github.com/hykilpikonna/hyfetch</Homepage>
+        <Packager>
+            <Name>Bahar Kurt</Name>
+            <Email>kurtbahartr@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>util.misc</PartOf>
+        <Summary>Onur bayraklarıyla Neofetch!</Summary>
+        <Description>Neofetch'in daha güncel sürümü rolünü de üstlenen HyFetch, LGBTQ+ üyelerine odaklı bir Neofetch modudur. PiSi depomda yama olmamasının sebebi Pisi Linux geliştiricilerinin orijinal Neofetch'e downstream koydukları yamaları kendi içinde barındırmasıdır. (En son Python tabanlı sürümü)</Description>
+        <BuildDependencies>
+            <Dependency>bash</Dependency>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="0fb04178055046355bddedfb1d84a7ede9c9cd45" type="targz">https://github.com/hykilpikonna/hyfetch/archive/refs/tags/1.99.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>hyfetch-py3</Name>
+        <Summary>Onur bayraklarıyla Neofetch!</Summary>
+        <RuntimeDependencies>
+            <Dependency>bash</Dependency>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-typing_extensions</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>neowofetch</Name>
+        <Summary>Hızlı, özelleştirilebilir sistem bilgisi betiği. (Yenilenmiş)</Summary>
+        <Description>Neowofetch, HyFetch'in bir parçası olarak geliştirilmiş bir araç olmakla birlikte, orijinal Neofetch'in habersiz bir şekilde yetim kalmasından sonra kendi başına bir yol çizmiş bir projeydi. Pisi Linux'taki Neofetch paketinin orijinal Neofetch'in üstüne yaptığı yamaların hemen hemen hepsi ve çok daha fazlası bu projede ana kodda yer almaktadır.</Description>
+        <RuntimeDependencies>
+            <Dependency>bash</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/neowofetch</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-12-08</Date>
+            <Version>1.99.0</Version>
+            <Comment>Rename from hyfetch, uprev and split</Comment>
+            <Name>Bahar Kurt</Name>
+            <Email>kurtbahartr@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,7 +1,0 @@
-<PISI>
-    <Source>
-        <Name>hyfetch</Name>
-        <Summary xml:lang="en">Neofetch with pride flags!</Summary>
-        <Description xml:lang="en">HyFetch, which also has the role of being an updated version of Neofetch, is a Neofetch mod aimed towards LGBTQ+ members. The reason why there's no patch for it in my PiSi repo is because it conatins the patches Pisi Linux maintainers use on the original Neofetch downstream.</Description>
-    </Source>
-</PISI>
