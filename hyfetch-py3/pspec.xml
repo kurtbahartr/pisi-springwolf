@@ -13,6 +13,7 @@
         <BuildDependencies>
             <Dependency>bash</Dependency>
             <Dependency>python3</Dependency>
+            <Dependency>python3-setuptools</Dependency>
         </BuildDependencies>
         <Archive sha1sum="0fb04178055046355bddedfb1d84a7ede9c9cd45" type="targz">https://github.com/hykilpikonna/hyfetch/archive/refs/tags/1.99.0.tar.gz</Archive>
     </Source>
@@ -23,6 +24,11 @@
             <Dependency>bash</Dependency>
             <Dependency>python3</Dependency>
             <Dependency>python3-typing_extensions</Dependency>
+            <AnyDependency>
+                <Dependency>neowofetch</Dependency>
+                <Dependency>fastfetch</Dependency>
+                <Dependency>qwqfetch</Dependency>
+            </AnyDependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,6 +48,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2025-09-08</Date>
+            <Version>1.99.0</Version>
+            <Comment>Add supported fetchers as any dependency</Comment>
+            <Name>Bahar Kurt</Name>
+            <Email>kurtbahartr@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2024-12-08</Date>
             <Version>1.99.0</Version>
